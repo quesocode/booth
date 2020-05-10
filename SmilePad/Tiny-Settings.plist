@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>api</key>
+	<dict>
+		<key>cache</key>
+		<true/>
+		<key>appId</key>
+		<string>smilepad2</string>
+		<key>gateway</key>
+		<string>http://api.tinystudios.com/2/</string>
+		<key>secret</key>
+		<string>84d9ee44e457ddef7f2c4f25dc8fa811</string>
+	</dict>
+	<key>app</key>
+	<dict>
+		<key>reachable</key>
+		<string>www.google.com</string>
+		<key>auto-refresh-seconds</key>
+		<integer>10</integer>
+		<key>locationAccuracy</key>
+		<integer>100</integer>
+		<key>locationDistanceFilter</key>
+		<integer>100</integer>
+		<key>locationTimeout</key>
+		<integer>0</integer>
+		<key>refreshOnShake</key>
+		<true/>
+		<key>tabIconDefault</key>
+		<string>13-target</string>
+		<key>trackLocation</key>
+		<false/>
+		<key>autoupdate</key>
+		<false/>
+		<key>liveupdate</key>
+		<true/>
+		<key>liveupdateInterval</key>
+		<integer>2</integer>
+	</dict>
+	<key>screen</key>
+	<dict>
+		<key>backgroundColor</key>
+		<string>white</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,42 @@
+//
+// Prefix header for all source files of the 'Airplanes and Blazers' target in the 'Airplanes and Blazers' project
+//
+
+#import <Availability.h>
+
+#ifdef DEBUG
+#    define DLog(...) NSLog(__VA_ARGS__)
+
+#define FLog(name, frame) { NSLog(@"%@ | %2.1f, %2.1f | %2.1fx%2.1f", name, frame.origin.x, frame.origin.y, frame.size.width, frame.size.height); };
+
+#define SLog(name, size) { NSLog(@"%@ | %2.1fx%2.1f", name, size.width, size.height); };
+
+#define PLog(name, origin) { NSLog(@"%@ | %2.1f, %2.1f", name, origin.x, origin.y); };
+
+#define MLog(name, margin) { NSLog(@"%@ | t: %2.1f, r: %2.1f, b: %2.1f, l: %2.1f", name, margin.top, margin.right, margin.bottom, margin.left); };
+
+#else
+#    define DLog(...) /* NSLog debug wrapper */
+#    define FLog(...) /* Frame Log */
+#    define SLog(...) /* Size Log */
+#    define PLog(...) /* Point Log */
+#    define MLog(...) /* Margin Log */
+
+#endif
+
+#define ALog(...) NSLog(__VA_ARGS__)
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+
+
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+
